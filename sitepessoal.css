@@ -5,44 +5,42 @@
 }
 
 body {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-nav, a {
-    color: purple;
-    float: right;
-    padding: 10px 10px 10px 15px;
-    width: 90%;
-    background-color:rgb(170, 112, 170);
+header {
+    background-color: rgba(209, 15, 209, 0.788);
+    color:white;
+    text-align: center;
+    font-size: px;
+    padding: 10px;
 }
 
-img {
-    padding: 20px 10px 10px 0px;
-    width: 10%;
-}
-
+/*formtação do menu*/
 nav ul {
-    list-style-type: circle;
+    list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
 li {
     float: left;
-
 }
+
 .horizontal-menu {
-    width: 90%;
     overflow: hidden;
+    width: 205px;
 }
 
-.horizontal-menu, a {
-    background-color: rgb(170, 112, 170);;
-    display:block;
-    padding: 50px;
+
+.horizontal-menu a {
+    background-color: plum;
+    color:purple;
+    display: block;
+    padding: 10px;
     text-decoration: none;
 }
 
 .horizontal-menu a:hover {
-    background-color:white ;
+    background-color: white;
 }
