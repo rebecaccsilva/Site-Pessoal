@@ -16,11 +16,11 @@ header {
     padding: 10px;
 }
 
-/*formtação do menu*/
+/*formatação do menu*/
 nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin: 2;
 }
 
 li {
@@ -29,12 +29,12 @@ li {
 
 .horizontal-menu {
     overflow: hidden;
-    width: 205px;
+    width: 1000px;
 }
 
 
 .horizontal-menu a {
-    background-color: plum;
+    background-color: rgb(221, 160, 221);
     color:purple;
     display: block;
     padding: 10px;
@@ -43,4 +43,41 @@ li {
 
 .horizontal-menu a:hover {
     background-color: white;
+}
+
+/*colunas*/
+article {
+    float: left;
+    padding: 70px;
+    width: 50%;
+    font-size: larger;
+}
+
+.banner {
+    width: 100%;
+}
+
+aside {
+    float: right;
+    padding: 60px;
+    width: 50%;
+    text-align: center;
+}
+
+/*rodapé*/
+p{
+    float:left;
+    padding: 10px;
+    width: 100%;
+}
+
+.nav-footermenu {
+    width: 1200px;
+    position: absolute;
+    left: 70%;
+    transform: translateX(-50%);
+}
+
+footer li {
+    list-style-type: none;
 }
