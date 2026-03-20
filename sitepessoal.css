@@ -39,16 +39,18 @@ li {
     display: block;
     padding: 10px;
     text-decoration: none;
+    cursor: pointer; /*muda o cursor para a mãozinha*/
+    transition: background-color 0.3s ease; /*transição suave*/
 }
 
 .horizontal-menu a:hover {
-    background-color: white;
+    background-color: rgb(148, 84, 148);
 }
 
 /*colunas*/
 article {
     float: left;
-    padding: 70px;
+    padding: 50px;
     width: 50%;
     font-size: larger;
 }
@@ -59,25 +61,71 @@ article {
 
 aside {
     float: right;
-    padding: 60px;
+    padding: 100px;
     width: 50%;
     text-align: center;
 }
 
+/*limpa o float após a seção*/
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 /*rodapé*/
-p{
+footer p .nav-footermenu {
+    background-color:  rgba(24, 24, 24, 0.788);
+}
+footer p{
     float:left;
-    padding: 10px;
+    padding: 50px;
     width: 100%;
 }
 
 .nav-footermenu {
-    width: 1200px;
+    width: 1350px;
     position: absolute;
+    padding: 10px;
     left: 70%;
     transform: translateX(-50%);
+
+}
+
+.nav-contatosmenu {
+    list-style: none;
 }
 
 footer li {
     list-style-type: none;
+}
+
+textarea{
+    width: 300px;
+    height: 1rem;
+    resize:none;
+    transition: height 700ms;
+}
+
+textarea:focus, textarea:valid {
+    height: 3em;
+}
+
+.enviar {
+    background-color:rgb(221, 160, 221) ;
+    color: purple;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /*muda o cursor para a mãozinha*/
+    transition: background-color 0.3s ease; /*transição suave*/
+}
+
+.enviar:hover {
+    background-color: rgb(148, 84, 148);
+}
+
+/*Layout responsivo--> Muda para duas linhas até 600px*/
+@media (max-width:600px) {
+    nav, article {width: 100%; height: auto;}
 }
