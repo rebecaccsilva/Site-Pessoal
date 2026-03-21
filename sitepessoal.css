@@ -5,12 +5,12 @@
 }
 
 body {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 header {
     background-color: rgba(209, 15, 209, 0.788);
-    color:white;
+    color: white;
     text-align: center;
     font-size: px;
     padding: 10px;
@@ -35,12 +35,14 @@ li {
 
 .horizontal-menu a {
     background-color: rgb(221, 160, 221);
-    color:purple;
+    color: purple;
     display: block;
     padding: 10px;
     text-decoration: none;
-    cursor: pointer; /*muda o cursor para a mãozinha*/
-    transition: background-color 0.3s ease; /*transição suave*/
+    cursor: pointer;
+    /*muda o cursor para a mãozinha*/
+    transition: background-color 0.3s ease;
+    /*transição suave*/
 }
 
 .horizontal-menu a:hover {
@@ -75,10 +77,11 @@ section::after {
 
 /*rodapé*/
 footer p .nav-footermenu {
-    background-color:  rgba(24, 24, 24, 0.788);
+    background-color: rgba(24, 24, 24, 0.788);
 }
-footer p{
-    float:left;
+
+footer p {
+    float: left;
     padding: 50px;
     width: 100%;
 }
@@ -101,25 +104,28 @@ footer li {
 }
 
 /*Página contato*/
-textarea{
+textarea {
     width: 300px;
     height: 1rem;
-    resize:none;
+    resize: none;
     transition: height 700ms;
 }
 
-textarea:focus, textarea:valid {
+textarea:focus,
+textarea:valid {
     height: 3em;
 }
 
 .enviar {
-    background-color:rgb(221, 160, 221) ;
+    background-color: rgb(221, 160, 221);
     color: purple;
     padding: 5px 10px;
     border: none;
     border-radius: 5px;
-    cursor: pointer; /*muda o cursor para a mãozinha*/
-    transition: background-color 0.3s ease; /*transição suave*/
+    cursor: pointer;
+    /*muda o cursor para a mãozinha*/
+    transition: background-color 0.3s ease;
+    /*transição suave*/
 }
 
 .enviar:hover {
@@ -128,19 +134,20 @@ textarea:focus, textarea:valid {
 
 /*Area de projetos feitos*/
 .projetos {
-    position:absolute;
+    position: absolute;
     float: left;
     width: 25%;
     padding: 35px;
-    
+
 }
-.projetos2  {
+
+.projetos2 {
     float: right;
     margin: 0 0 0 50px;
     width: 40%;
     padding: 5px 5px 5px;
     display: inline-block;
-    
+
 }
 
 .githuib {
@@ -150,5 +157,10 @@ textarea:focus, textarea:valid {
 
 /*Layout responsivo--> Muda para duas linhas até 600px*/
 @media (max-width:600px) {
-    nav, article {width: 100%; height: auto;}
+
+    nav,
+    article {
+        width: 100%;
+        height: auto;
+    }
 }
