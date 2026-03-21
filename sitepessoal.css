@@ -100,6 +100,7 @@ footer li {
     list-style-type: none;
 }
 
+/*Página contato*/
 textarea{
     width: 300px;
     height: 1rem;
@@ -123,6 +124,28 @@ textarea:focus, textarea:valid {
 
 .enviar:hover {
     background-color: rgb(148, 84, 148);
+}
+
+/*Area de projetos feitos*/
+.projetos {
+    position:absolute;
+    float: left;
+    width: 25%;
+    padding: 35px;
+    
+}
+.projetos2  {
+    float: right;
+    margin: 0 0 0 50px;
+    width: 40%;
+    padding: 5px 5px 5px;
+    display: inline-block;
+    
+}
+
+.githuib {
+    padding: 20px;
+    width: 50%;
 }
 
 /*Layout responsivo--> Muda para duas linhas até 600px*/
